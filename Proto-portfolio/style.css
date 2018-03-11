@@ -1,0 +1,182 @@
+
+/*Fonts
+
+
+    font-family: 'Paytone One', sans-serif;
+
+    font-family: 'Bungee Inline', cursive;
+
+    font-family: 'Bowlby One SC', cursive;
+
+    font-family: 'Ubuntu', sans-serif;
+
+*/
+
+body{
+    background-color: #262626;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #42f459;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 20px;
+}
+
+h1{
+    color: #42f459;
+    font-size: 120px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #f44177;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3#h3-sobremim{
+    margin-top: 25%;
+}
+
+
+h3#h3-interesses{
+    color: #f44177;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+
+h3#h3-contato{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 12.5%;
+    padding-bottom: 5%;
+}
+
+section#section-sobremim{
+    background-color: #383737;
+    box-shadow: 5px 10px #303030;
+}
+
+section#section-informacoesadicionais{
+    background-color: #42f459;
+    box-shadow: 5px 10px #279134;
+    padding: 15px;
+    margin-top: 100px;
+    margin-bottom: 10px; 
+}
+
+section#section-contato{
+    background-color: #383838;
+    box-shadow: 5px 10px #303030;
+}
+
+div#div-sobremim{
+    background-color: rgba(244, 64, 119, 1);
+    box-shadow: 5px 10px #c93662;
+}
+
+p{
+    color: #f44177;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+}
+
+p#p-sobremim{
+    color: #cecece;
+    font-size: 20px;
+}
+
+p.p-top{
+    text-align: center;
+    color: #42f459;/*#9b9b9b;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px; 
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p#p-contato{
+    text-align: center;
+    margin: 0px;
+}
+
+p#p-sobremim{
+    line-height: 300%;
+}
+
+p#p-informacoesadicionais{
+    color: #3d3d3d;
+    font-size: 25px;
+    padding: 30px;
+}
+
+p#p-informacoesadicionais span{
+    color: #f44177;
+    font-size: 30px;
+    text-align: center;
+}
+
+div.dummy p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2vw;
+    color: #3d3d3d;
+}
+
+img#perfil{
+    float: left;
+    padding: 15px;
+}
+
+footer p{
+    text-align: center;
+}
+
+a{
+    /*color: #0de0c7;*/
+    color: #f44177;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.dummy{
+    height: 168px;
+    background-color: #42f459;
+    padding: 10px;
+    box-shadow: 5px 10px#c93662 /*#5fc935*/;
+}
+
+hr{
+    width: 50%;
+    height: 4px;
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: #42f459;
+
+}
+
+span#entre-em-contato{
+    font-size: 20px;
+}
+
+span#telefone{
+    font-size: 25px;
+    color: #42f459;
+}
