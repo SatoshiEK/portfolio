@@ -1,0 +1,59 @@
+
+body{
+    margin: 0px;
+    background: -webkit-linear-gradient(#e8e8e8, #dbdbdb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e8e8e8, #dbdbdb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e8e8e8, #dbdbdb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e8e8e8, #dbdbdb); /* Standard syntax */
+    background:#e8e8e8;
+
+    font-family: 'Ostrich Sans Black', arial;
+
+}
+
+h3{
+    color: #1c1c1c;
+    font-size: 25px;
+    font-family: 'Ostrich Sans Black', arial;
+    margin: 0px;
+}
+
+div.topic{
+    border: 2px solid #1c1c1c;
+    height: 250px;
+}
+
+div#menu{
+    height: 75px;
+    width: 100%;
+    background-color: #1c1c1c;
+    float: left;
+    
+}
+
+div#menu a{
+    color: #e8e8e8;
+    text-decoration: none;
+    text-align: center;
+    width: 75px;
+    
+}
+
+p{
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a{
+    display: block;
+}
+
+li a:hover {
+    background-color: #e8e8e8;
+    color: #1c1c1c;
+}

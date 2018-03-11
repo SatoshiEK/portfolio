@@ -1,0 +1,74 @@
+
+body{
+  background: linear-gradient(to bottom, #A11000, #363432, #cecece);
+  overflow-x: hidden;
+}
+
+#topo{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    color: white;
+    font-size: 20px; 
+    height: 55px;
+    z-index: 9999;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+#topo:hover{
+    opacity: 0.3;
+}
+
+#main{
+    margin-top: 85px;
+}
+
+.row{
+    color: white;
+    font-size: 25px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    border: 3px solid white;
+    margin: 3px;
+    padding: 3px;
+}
+
+.row p{
+    transition: color 0.5s;
+}
+
+.row p:hover{
+    color: #736F6B;
+}
+
+.col-sm-4{
+    border-right: 3px solid white;
+}
+
+.col-sm-3{
+    border-right: 3px solid white;
+}
+
+.col-sm-2{
+    border-right: 3px solid white;
+}
+
+.col-sm-2:hover{
+    background-color: white;
+}
+
+.col-sm-3:hover{
+    background-color: white;
+}
+
+.col-sm-4:hover{
+    background-color: white;
+}
+
+h3{
+    color: white;
+    font-size: 25px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}

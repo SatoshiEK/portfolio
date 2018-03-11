@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+    /* Full height */
+    height: 650px;; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 0px;
+}
+
+.no-parallax{
+    height: 650px;
+    margin: 0px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#avt-1{
+    /* The image used */
+    background-image: url("../dante.jpg");
+}
+
+#avt-2{
+    /* The image used */
+    background-image: url("../behemoth.jpg");
+}
+
+#avt-3{
+    /* The image used */
+    background-image: url("../bismuth.jpg");
+}
+
+h3{
+    color: #e8e8e8;
+    padding-top: 35px;
+    margin: 0px;
+    text-align: center;
+}
+
+div.transition{
+    color: #e8e8e8;
+    background-color: #1c1c1c;
+    height: 150px; 
+    margin: 0px;
+}
+
+p.avt-p{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 61px;
+    padding-bottom: 61px;
+    color: #e8e8e8;
+    background-color: rgba(28,28,28,0.5);
+}

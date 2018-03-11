@@ -1,0 +1,30 @@
+
+
+h3{
+    color: #1c1c1c;
+    font-size: 50px;
+    position: absolute;
+    top: 25%;
+}
+
+p{
+    float: left;
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -50%)
+}
+
+div.char{
+    text-align: justify;
+    position: relative;
+    height: 700px;
+}
+
+div.char-img{
+    float: right;
+}
+
+#char-1-img{
+    margin-right: 100px;
+    border-left: 2px dotted #1c1c1c;
+}
