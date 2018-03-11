@@ -1,5 +1,6 @@
 
 /*
+    Fonts do Google Fonts:
 
     font-family: 'Oswald', sans-serif;
 
@@ -9,10 +10,15 @@
 
 */
 
+/* Geral */
 body{
     margin: 0px;
     font-family: 'Titillium Web', sans-serif;
     background-color: #ffd800;
+}
+
+section{
+    padding-right: 5%;
 }
 
 p{
@@ -29,6 +35,7 @@ a{
     text-decoration: none;
 }
 
+/* Links da Navbar*/
 a.a-nav{
     color: #ffd800;
     margin: 0;
@@ -44,12 +51,22 @@ a.a-nav:hover{
     color: white;
 }
 
-figure{
-    display: inline-block;
+ul{
+    position: fixed;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 4.5vw; 
+    background-color: black;
+    font-family: 'Anton', sans-serif;
+    height: 100%;
+    width: 5%;
+    border-left: 1px dotted rgb(255, 216, 0, 0.3);
 }
 
-section{
-    padding-right: 5%;
+li{
+    height: 20%;
 }
 
 /*  Hs (H1, H2, H3...)  */
@@ -81,6 +98,16 @@ span.h1-letra:hover{
 h2{
     color: black;
     text-transform: uppercase;
+    font-size: 6vw;
+}
+
+div#div-trabalhos h3{
+    color: black;
+    font-size: 6vw;
+}
+
+div#div-contato h3{
+    color: black;
     font-size: 6vw;
 }
 
@@ -135,11 +162,6 @@ div#div-trabalhos{
     text-align: center;
     color: black;
     height: 67vw;
-}
-
-div#div-trabalhos h3{
-    color: black;
-    font-size: 6vw;
 }
 
 div#div-trabalhos div.quadrado{
@@ -215,26 +237,4 @@ div#div-contato{
     background-color: #ffd800;
     height: 20vw;
     color: black;
-}
-
-div#div-contato h3{
-    color: black;
-    font-size: 6vw;
-}
-ul{
-    position: fixed;
-    right: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 4.5vw; 
-    background-color: black;
-    font-family: 'Anton', sans-serif;
-    height: 100%;
-    width: 5%;
-    border-left: 1px solid rgb(255, 216, 0, 0.3);
-}
-
-li{
-    height: 20%;
 }
