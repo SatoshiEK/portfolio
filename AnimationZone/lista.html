@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)http://webdav.sistemas.pucminas.br:8080/webdav/sistemas/sga/20171/1199974_ajax.html -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+		<script>
+	    
+		 var xmlhttp;
+		 var data;
+
+		function callback() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {                             
+				 	data = JSON.parse (xmlhttp.responseText);
+					
+					montarTabela(data);
+				}
+			}
+		
+		function loadXMLDoc(codigo ='') {
+			xmlhttp = new XMLHttpRequest();
+			
+			xmlhttp.onreadystatechange = callback;
+			xmlhttp.open("GET", "http://www.smartsoft.com.br/webservice/restifydb/Employees/cliente/?_view=json&_expand=yes", true);
+			xmlhttp.send();
+		}
+		
+		function montarTabela(data){
+		 var texto = "<table id=\"tabela\"><caption id=\"captionTabela\">Lista de Clientes</caption><tr><th class=\"codigo\">Código</th><th>Nome</th></tr>";
+			//i = 0; i < data.restify.rows.length; i++
+			for(i = 0; i < data.restify.rows.length; i++){
+				texto += "<tr><td>" + data.restify.rows[i].values.codigo.value + "</td> <td><a href=\"#\" onclick=\"exibirDetalhes(" + i + ")\">" + data.restify.rows[i].values.nome.value + "</a></td></tr>";
+
+				}
+
+		texto += "</table>"        
+        document.getElementById("section1").innerHTML = texto;
+		}
+
+        function exibirDetalhes(codigo){
+			var texto2="<table id=\"tabela2\"><caption id=\"captionDetalhes\">Detalhes do Cliente</caption><tr><th>Nome</th><th>Cidade</th><th>Estado</th><th>Data de Nascimento</th><th>Email</th></tr><tr> ";
+
+			texto2 += "<td>" + data.restify.rows[codigo].values.nome.value + "</td>" + "<td>" + data.restify.rows[codigo].values.cidade.value + "</td>" + "<td>" + data.restify.rows[codigo].values.estado.value + "</td>" + "<td>" + data.restify.rows[codigo].values.data_nascimento.value + "</td>" + "<td>" + data.restify.rows[codigo].values.email.value + "</td></tr>";
+
+			document.getElementById("detalhes").innerHTML = texto2;
+			
+		}
+
+	</script>
+	
+	</head>
+	<body>
+		
+		<section id="principal">
+		<div id="section1" style="overflow-x:auto;">
+			
+			<button type="button" onclick="loadXMLDoc()">Carregar Clientes</button>
+			
+		</div>
+		</section>
+		
+		<div id="detalhes" style="overflow-x:auto;">
+
+		</div>
+		<footer>
+<div id="footer">
+  <p></br>Copyright © 2017 TecWeb Inc. All rights reserved.</p>
+  <div id="footer-line"></div>
+  <p></br> Equipe: Eduardo Lopes | Marcos Vinícius | Matheus Andrade | Rafael Andrade | Rafael Ribeiro</p>
+</div>
+</footer>
+
+	</body>
+</html>

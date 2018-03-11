@@ -1,0 +1,45 @@
+
+body{
+    background-color: #303030;
+    height: 100%;
+    color: white;
+}
+
+div#pkmn{
+    position: relative;
+}
+
+img#nidorino{
+    position: absolute;
+    left: 300px;
+    top: 50px;
+}
+
+.aniN{
+    animation-name: ataque1;
+    animation-duration: 0.5s;
+}
+
+.aniG{
+    animation-name: ataque2;
+    animation-duration: 0.5s;
+}
+
+.none{
+
+}
+
+img#gengar{
+    position: absolute;
+    left: 200px;
+    top: 75px;
+}
+
+@keyframes ataque1 {
+    from {left: 300px;}
+    to {left: 275px;}
+}
+@keyframes ataque2 {
+    from {left: 200px;}
+    to {left:225px;}
+}

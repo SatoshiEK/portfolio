@@ -1,0 +1,240 @@
+
+/*
+
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'Titillium Web', sans-serif;
+
+    font-family: 'Anton', sans-serif;
+
+*/
+
+body{
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #ffd800;
+}
+
+p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2vw;
+}
+
+p.p-right{
+    float: right;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a.a-nav{
+    color: #ffd800;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-size: 1vw;
+    transition: font-size 0.5s, color 0.5s;
+}
+
+a.a-nav:hover{
+    font-size: 1.2vw;
+    color: white;
+}
+
+figure{
+    display: inline-block;
+}
+
+section{
+    padding-right: 5%;
+}
+
+/*  Hs (H1, H2, H3...)  */
+h1, h2, h3, h4, h5, h6, h7{
+    color: black;
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h1{
+    color: black;
+    text-transform: uppercase;
+    font-size: 14vw;
+}
+
+span.h1-letra{
+    color: black;
+    font-size: 14vw;
+    transition: color 0.5s, font-size 1s;
+}
+
+span.h1-letra:hover{
+    color: white;
+    font-size: 15vw;
+}
+
+h2{
+    color: black;
+    text-transform: uppercase;
+    font-size: 6vw;
+}
+
+/*  Divs    */
+#div-header, #div-sobreMim, #div-interesses, #div-informaçõesExtras, #div-contato{
+    background-color: #ffd800;
+    text-align: center;
+    height: 53vw;
+}
+
+div#div-header{
+    background-color: #ffd800;
+    text-align: center;
+    height: 53vw;
+}
+
+div#div-header p{
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5vw;
+}
+
+div#div-header h1, h2, p{
+    padding-top: 3%;
+}
+
+div#div-sobreMim{
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-align: left;
+    height: 53vw;
+}
+
+div#div-sobreMim h3{
+    color: white;
+    font-size: 6vw;
+}
+
+img#perfil{
+    float: right;
+    margin-left: 15%;
+    width: 14vw;
+    height: auto;
+    border: 3px dashed #ffd800; 
+}
+
+div#div-trabalhos{
+    margin-top: 2.5%;
+    background-color: #ededed;
+    text-align: center;
+    color: black;
+    height: 67vw;
+}
+
+div#div-trabalhos h3{
+    color: black;
+    font-size: 6vw;
+}
+
+div#div-trabalhos div.quadrado{
+    color: black;
+    width: 21.5vw;
+    height: 18.5vw;
+    background-color: #ffd800;
+    box-shadow: 10px 10px #b99e00;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 1%;
+    transition: color 0.5s, width 0.5s, height 0.5s, box-shadow 0.5s, background-color 0.5s;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+div#div-trabalhos div.quadrado:hover{
+    color: white;
+    width: 22.5vw;
+    height: 19.5vw;
+    background-color: #b99e00;
+    box-shadow: none;
+}
+
+div#div-interesses{
+    margin-top: 2.5%;
+    background-color: #ededed;
+    text-align: center;
+    color: black;
+    height: 53vw;
+}
+
+div#div-interesses h3{
+    color: black;
+    font-size: 6vw;
+}
+
+div#div-interesses div.quadrado{
+    color: black;
+    width: 10vw;
+    height: 10vw;
+    background-color: #ffd800;
+    box-shadow: 10px 10px #b99e00;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 1%;
+    transition: color 0.5s, width 0.5s, height 0.5s, box-shadow 0.5s, background-color 0.5s;
+
+}
+
+div#div-interesses div.quadrado:hover{
+    color: white;
+    width: 11vw;
+    height: 11vw;
+    background-color: #b99e00;
+    box-shadow: none;
+}
+
+div#div-informaçõesExtras{
+    background-color: black;
+    height: 25vw;
+    color: white;
+}
+
+div#div-blackSpace{
+    background-color: black;
+    height: 5vw;
+    margin-top: 2.5vw;
+}
+
+div#div-contato{
+    background-color: #ffd800;
+    height: 20vw;
+    color: black;
+}
+
+div#div-contato h3{
+    color: black;
+    font-size: 6vw;
+}
+ul{
+    position: fixed;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 4.5vw; 
+    background-color: black;
+    font-family: 'Anton', sans-serif;
+    height: 100%;
+    width: 5%;
+    border-left: 1px solid rgb(255, 216, 0, 0.3);
+}
+
+li{
+    height: 20%;
+}

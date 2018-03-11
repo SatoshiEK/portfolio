@@ -1,0 +1,13 @@
+PUCMinas - Barreiro
+Sistemas de Informação - Tecnologias Web
+
+Professor: Rommel Vieira Carneiro
+
+Componentes:
+  Eduardo Guimarães Lopes
+  Marcos Vinícius Rocha Baésse
+  Matheus de Andrade e e Oliveira
+  Rafael Tavares Ribeiro
+  Rafael Ribeiro Andrade
+
+Após selecionar a aba do gáfico desejado, deve-se escolher a pesquisa/questão à qual o gráfico se refere

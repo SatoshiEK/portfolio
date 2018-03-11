@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+<div id="hp1"></div>
+<div id="hp2"></div>
+
+<div id='pkmn'>
+<img id="gengar" src="gengar.png">
+<img id="nidorino" src="nidorino.png">
+</div>
+
+<input name="gengarAtk" type ='button' value="Nightshade!" onclick="atk1(); atkAni1(); noneN();">
+<input name="nidorinoAtk" type ='button' value="Horn Attack!" onclick="atk2(); atkAni2(); noneG();">
+
+
+
+<script>
+
+var hp1 = 100;
+var hp2 = 100;
+
+document.getElementById('hp1').innerHTML =" Gengar: " + hp1;
+document.getElementById('hp2').innerHTML = "Nidorino: " + hp2;
+
+function atk1(){
+    var number = Math.floor((Math.random() * 10) + 1);
+    
+    if(hp2 - number < 0){
+        hp2 = 0;
+        document.getElementById('hp2').innerHTML = "Nidorino: " + hp2;
+    }
+    else{
+        hp2 = hp2 - number;
+        document.getElementById('hp2').innerHTML = "Nidorino: " + hp2;
+    }
+    
+}
+
+function atk2(){
+    var number = Math.floor((Math.random() * 10) + 1);
+    if(hp1 - number < 0){
+        hp1 = 0;
+        document.getElementById('hp1').innerHTML = "Gengar: " + hp1;
+    }
+    else{
+        hp1 = hp1 - number;
+        document.getElementById('hp1').innerHTML = "Gengar: " + hp1;
+    }
+}
+
+function atkAni1(){
+    document.getElementById('gengar').className = 'aniG';
+}
+
+function noneN(){
+    document.getElementById('nidorino').className = 'none';
+}
+
+function atkAni2(){
+    document.getElementById('nidorino').className = 'aniN';
+}
+
+function noneG(){
+    document.getElementById('gengar').className = 'none';
+}
+
+</script>
+    
+</body>
+</html>
